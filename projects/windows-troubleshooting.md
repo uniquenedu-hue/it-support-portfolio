@@ -41,3 +41,43 @@ In progress – practical exercises and screenshots will be added as they are co
 - Computer maintenance
 - Technical documentation
 - IT Support fundamentals
+## Troubleshooting Findings and Results
+
+### Initial Problem
+The laptop experienced high CPU and memory usage.
+
+- CPU usage: 72–86% during initial observations.
+- Memory usage: up to 96%.
+- Installed RAM: 8 GB DDR3.
+
+### Investigation
+Task Manager showed:
+- VmmemWSL: approximately 2,095 MB.
+- Google Chrome: approximately 880 MB.
+- Visual Studio Code: approximately 189 MB.
+
+Linux investigation also identified Jenkins running in the background.
+
+### Actions Taken
+1. Stopped the Jenkins service because it was not currently needed.
+2. Closed an unused Google Drive browser tab.
+3. Ran `wsl --shutdown` in Windows PowerShell.
+4. Waited approximately 45 minutes before checking resource usage again.
+
+### Final Results
+
+| Resource | Before WSL shutdown | After WSL shutdown |
+|---|---:|---:|
+| CPU | 42–50% | 15–28% |
+| Memory | Up to 92% | 67% |
+
+### Conclusion
+Stopping the WSL environment significantly reduced CPU and memory usage. WSL was a major contributor to the high resource usage observed during this investigation.
+
+### Skills Demonstrated
+- Windows Task Manager monitoring
+- Linux process investigation
+- Basic memory troubleshooting
+- Windows PowerShell commands
+- Identifying unnecessary background services
+- Recording troubleshooting results
