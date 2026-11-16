@@ -21,7 +21,7 @@ I am currently developing practical IT skills through IT Support and Customer Su
 
 ## Hands-on Projects
 
-1. Windows Troubleshooting Lab – In progress
+1 [Windows Troubleshooting Lab](projects/windows-troubleshooting.md) — Completed
 2. Network and Wi-Fi Troubleshooting Lab – Planned
 3. User Account Support Lab – Planned
 4. Software Installation and Troubleshooting – Planned
